@@ -5,7 +5,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "web" {
-  ami           = data.aws_ami.ubuntu.id
+  ami           = "ami-029562ad87fe1185c"
   instance_type = "t3.micro"
 
   tags = {
